@@ -9,7 +9,6 @@ function extrapolateNextValue(histories) {
 
   let sum = 0;
 
-  // Split the input into individual histories
   let reports = histories
     .split("\n")
     .map((sequence) => sequence.split(" ").map(Number));
@@ -38,4 +37,4 @@ let report = `0 3 6 9 12 15
   10 13 16 21 30 45`;
 
 let result = extrapolateNextValue(report);
-console.log(result); // Output the sum of extrapolated values
+console.log(result);
